@@ -1,6 +1,7 @@
 #include <stdio.h>      
 #include "sensor.h"     
 #include "battery.h"    
+#include "fake_mcu.h"
 
 int main(void) {
 
