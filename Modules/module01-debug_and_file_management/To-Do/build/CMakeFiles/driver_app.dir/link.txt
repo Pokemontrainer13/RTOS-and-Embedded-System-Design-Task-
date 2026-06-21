@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file=CMakeFiles/driver_app.dir/link.d CMakeFiles/driver_app.dir/src/main.c.o CMakeFiles/driver_app.dir/src/sensor.c.o CMakeFiles/driver_app.dir/src/battery.c.o CMakeFiles/driver_app.dir/src/fake_mcu.c.o -o driver_app
