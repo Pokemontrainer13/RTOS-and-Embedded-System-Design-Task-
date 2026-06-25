@@ -126,6 +126,19 @@ Use the queue to transfer sensor data from `SensorTask` to `DisplayTask`.
 
 The application must use FreeRTOS APIs.
 
+
+When implementing applications using FreeRTOS, embedded developers must satisfy both **functional** and **resource** requirements.
+
+For this module, keep the following design goals in mind:
+
+* Use the minimum practical RAM required by your application.
+* Allocate only as much task stack as necessary for each task.
+* Choose an appropriate queue depth based on the application requirements.
+* Remember that queues store copies of the data being sent.
+
+Throughout this module, consider how design decisions such as task stack size, queue depth, and message size affect the total RAM usage of the system.
+
+
 ---
 
 ## Restrictions
